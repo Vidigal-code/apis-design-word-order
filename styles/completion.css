@@ -1,0 +1,23 @@
+.completion-panel {
+  padding-block: var(--space-8);
+  text-align: center;
+}
+
+.completion-title {
+  font-size: 2rem;
+  font-weight: var(--weight-extra-bold);
+  line-height: var(--line-heading);
+  letter-spacing: -0.03em;
+}
+
+.completion-description {
+  max-width: 32rem;
+  margin: var(--space-4) auto var(--space-6);
+  color: var(--color-muted);
+  font-size: var(--font-md);
+}
+
+.review-button,
+.replay-button {
+  margin: var(--space-2) 0;
+}

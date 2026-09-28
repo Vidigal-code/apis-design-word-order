@@ -4,29 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff9ef">
-    <meta name="description" content="Pratique inglês organizando palavras no seu ritmo.">
+    <meta name="description" content="Pratique inglês organizando palavras. Uma atividade interativa, acessível e no seu ritmo.">
     <title>APIS · Word order</title>
     <link rel="icon" href="data:,">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
+    <script type="module" src="src/app.js"></script>
   </head>
   <body>
-    <a class="skip-link" href="#introduction">Pular para o conteúdo</a>
+    <a class="skip-link" href="#activities" data-i18n="skipLink">Pular para as atividades</a>
     <header class="site-header">
       <div class="brand">
         <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
         <span class="brand-name">APIS<span aria-hidden="true">.</span></span>
+        <span class="brand-tagline" data-i18n="brandSubtitle"></span>
+      </div>
+      <div class="header-controls">
+        <div class="language-control">
+          <label for="language" data-i18n="languageLabel">Idioma</label>
+          <span class="language-select">
+            <select id="language" name="language">
+              <option value="pt" lang="pt-BR">PT · Português</option>
+              <option value="en" lang="en">EN · English</option>
+              <option value="es" lang="es">ES · Español</option>
+            </select>
+          </span>
+        </div>
+        <button id="sound-toggle" class="sound-toggle" type="button" aria-label="Som dos botões" aria-pressed="true">
+          <span data-i18n="soundEffects">Som dos botões</span>
+          <span class="sound-state" aria-hidden="true">Ligado</span>
+        </button>
       </div>
     </header>
-    <main id="introduction" class="page" tabindex="-1">
+    <main class="page">
       <section class="hero" aria-labelledby="page-title">
-        <p class="eyebrow">Inglês na prática</p>
-        <h1 id="page-title" class="hero-heading">Vamos brincar <span class="hero-accent">com palavras?</span></h1>
-        <p class="hero-description">Uma atividade para explorar palavras e montar frases em inglês.</p>
+        <span class="hero-spark hero-spark--left" aria-hidden="true">✦</span>
+        <p class="eyebrow" data-i18n="eyebrow"></p>
+        <h1 id="page-title" class="hero-heading"><span data-i18n="heroTitle">Vamos brincar</span> <span class="hero-accent" data-i18n="heroAccent">com palavras?</span></h1>
+        <p class="hero-description" data-i18n="heroDescription"></p>
+        <span class="hero-spark hero-spark--right" aria-hidden="true">✦</span>
       </section>
+      <div id="activities" class="workspace" tabindex="-1">
+        <div id="practice" class="primary-column"></div>
+      </div>
+      <noscript><p class="load-error">Ative o JavaScript para montar as frases. Enable JavaScript to build sentences. Activa JavaScript para formar frases.</p></noscript>
     </main>
-    <footer class="site-footer"><span class="footer-mark">APIS</span><p>Feito para aprender. Uma palavra de cada vez.</p><span aria-hidden="true">✦</span></footer>
+    <footer class="site-footer"><span class="footer-mark">APIS</span><p data-i18n="footer"></p><span aria-hidden="true">✦</span></footer>
   </body>
 </html>

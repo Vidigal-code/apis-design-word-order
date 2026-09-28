@@ -1,0 +1,17 @@
+@media (forced-colors: active) {
+  .word-piece,
+  .selected-piece,
+  .check-button,
+  .journey-step,
+  .sound-toggle,
+  .narration-button,
+  .language-control select {
+    border: var(--border-strong) solid ButtonText;
+    box-shadow: none;
+  }
+
+  .answer-zone,
+  .answer-slot {
+    border-color: CanvasText;
+  }
+}

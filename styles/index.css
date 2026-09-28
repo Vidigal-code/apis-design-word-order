@@ -1,6 +1,8 @@
 @import "./theme.css";
 @import "./base.css";
 @import "./header.css";
+@import "./audio-controls.css";
 @import "./hero.css";
+@import "./hint-narration.css";
 @import "./footer.css";
 @import "./accessibility.css";

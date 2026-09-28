@@ -1,0 +1,60 @@
+.feedback {
+  margin-top: var(--space-3);
+  font-size: var(--font-base);
+  font-weight: var(--weight-bold);
+}
+
+.feedback:empty {
+  margin: 0;
+}
+
+.reorder-hint:empty {
+  display: none;
+}
+
+.reorder-hint {
+  margin-top: var(--space-2);
+  color: var(--color-muted);
+  font-size: var(--font-sm);
+}
+
+.feedback[data-status="correct"] {
+  color: var(--color-success);
+}
+
+.feedback[data-status="correct"]::before {
+  content: "✓ ";
+}
+
+.feedback[data-status="incorrect"] {
+  color: var(--color-error);
+}
+
+.feedback[data-status="incorrect"]::before {
+  content: "↻ ";
+}
+
+.feedback[data-status="incomplete"] {
+  color: var(--color-warning);
+}
+
+.feedback[data-status="incomplete"]::before {
+  content: "! ";
+}
+
+.answer-zone[data-status="correct"] {
+  border-color: var(--color-success);
+  border-style: solid;
+  background: var(--color-success-surface);
+}
+
+.answer-zone[data-status="incorrect"] {
+  border-color: var(--color-error);
+  border-style: solid;
+  background: var(--color-error-surface);
+}
+
+.answer-zone[data-status="incomplete"] {
+  border-color: var(--color-warning);
+  border-style: solid;
+}

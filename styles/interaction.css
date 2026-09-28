@@ -1,0 +1,22 @@
+@media (hover: hover) {
+  .word-piece:hover:not(:disabled),
+  .remove-piece:hover,
+  .move-piece:hover:not(:disabled),
+  .check-button:hover:not(:disabled) {
+    background: var(--color-blue-hover);
+  }
+
+  .reset-button:hover,
+  .hint-toggle:hover,
+  .sound-toggle:hover,
+  .narration-button:hover:not(:disabled) {
+    background: var(--color-lilac);
+    color: var(--color-violet);
+  }
+
+  .journey-step:hover:not([aria-current="step"]) {
+    border-color: var(--color-violet);
+    background: var(--color-lilac);
+    color: var(--color-violet);
+  }
+}

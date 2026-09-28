@@ -3,6 +3,11 @@
 @import "./header.css";
 @import "./audio-controls.css";
 @import "./hero.css";
+@import "./sentence.css";
+@import "./pieces.css";
 @import "./hint-narration.css";
+@import "./feedback.css";
+@import "./actions.css";
 @import "./footer.css";
 @import "./accessibility.css";
+@import "./interaction.css";

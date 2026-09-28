@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+html {
+  font-family: var(--font-body);
+  line-height: var(--line-body);
+  background: var(--color-page);
+  color: var(--color-ink);
+}
+
+body {
+  margin: 0;
+}
+
+button,
+select,
+summary {
+  font: inherit;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+button,
+a,
+select,
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-offset);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+button,
+h1,
+h2,
+h3,
+p,
+legend {
+  overflow-wrap: anywhere;
+}
+
+button svg,
+button span {
+  pointer-events: none;
+}
+
+.site-header,
+.page,
+.site-footer {
+  width: min(var(--page-width), calc(100% - var(--space-8)));
+  margin-inline: auto;
+}

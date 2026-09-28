@@ -1,0 +1,15 @@
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  padding-block: var(--space-6);
+  color: var(--color-muted);
+  font-size: var(--font-xs);
+}
+
+.footer-mark {
+  color: var(--color-violet);
+  font-weight: var(--weight-extra-bold);
+}
